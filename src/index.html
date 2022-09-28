@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="flex flex-col items-center h-screen w-screen">
+    <h1 class="text-4xl font-bold mt-20 mb-10">Bascketball Scorebaord</h1>
+    <div
+      class="bg-[#1B244A] w-[500px] h-[330px] flex items-center justify-evenly"
+    >
+      <!-- Left -->
+      <div class="w-[40%] h-[90%]">
+        <h1 class="h-[25%] text-white font-extrabold text-5xl text-center pt-4">
+          HOME
+        </h1>
+        <div class="h-[45%] rounded-md bg-black mx-5">
+          <h2
+            id="homePoints"
+            class="text-[#F94F6D] font-mono text-9xl text-center pt-1"
+          >
+            0
+          </h2>
+        </div>
+        <div class="h-[30%] flex justify-evenly items-center">
+          <button
+            class="border-2 font-mono rounded-md border-[#9AABD8] text-[#9AABD8] text-xl h-[50%] w-[20%]"
+            onclick={add1PointHome()}
+          >
+            +1
+          </button>
+          <button
+            class="border-2 font-mono rounded-md border-[#9AABD8] text-[#9AABD8] text-xl h-[50%] w-[20%]"
+            onclick={add2PointHome()}
+          >
+            +2
+          </button>
+          <button
+            class="border-2 font-mono rounded-md border-[#9AABD8] text-[#9AABD8] text-xl h-[50%] w-[20%]"
+            onclick={add3PointHome()}
+          >
+            +3
+          </button>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="w-[40%] h-[90%]">
+        <h1 class="h-[25%] text-white font-extrabold text-5xl text-center pt-4">
+          GUEST
+        </h1>
+        <div class="h-[45%] rounded-md bg-black mx-5">
+          <h2
+            id="guestPoints"
+            class="text-[#F94F6D] font-mono text-9xl text-center pt-1"
+          >
+            0
+          </h2>
+        </div>
+        <div class="h-[30%] flex justify-evenly items-center">
+          <button
+            class="border-2 font-mono rounded-md border-[#9AABD8] text-[#9AABD8] text-xl h-[50%] w-[20%]"
+            onclick={add1PointGuest()}
+          >
+            +1
+          </button>
+          <button
+            class="border-2 font-mono rounded-md border-[#9AABD8] text-[#9AABD8] text-xl h-[50%] w-[20%]"
+            onclick={add2PointGuest()}
+          >
+            +2
+          </button>
+          <button
+            class="border-2 font-mono rounded-md border-[#9AABD8] text-[#9AABD8] text-xl h-[50%] w-[20%]"
+            onclick={add3PointGuest()}
+          >
+            +3
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
